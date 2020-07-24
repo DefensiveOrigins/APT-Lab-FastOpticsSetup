@@ -4,12 +4,11 @@
 # Applied Purple Teaming Threat Optics Lab - Fast Optics Stack 
 ## Purple Teaming Attack &amp; Hunt Lab - Fast Optics with PowerShell
 
-![PowerShell Input][PowershellInput]
-```powershell
-Invoke-WebRequest –URI "https://github.com/dafthack/DomainPasswordSpray/archive/master.zip" -OutFile "~\Downloads\master.zip"
-```
+The purpose of these scripts is to streamline the optics deployment process. Have you been through the course before and just want a rapid optics deployment? The scripts will download relevant materials including the LABPACK repo which contains group policy objects, and a few other things. 
 
-### Step 1 - DC First!
+#### These scripts are intended to be executed on the domain controller and member server in this order. Once the scripts are complete, log data will be shipping from the Windows environment to Kafka on HELK. 
+
+### Step 1 - Access the DC first!
 ![PowerShell Input][PowershellInput]
 #### Launch PowerShell in bypass signature validation mode.
 
