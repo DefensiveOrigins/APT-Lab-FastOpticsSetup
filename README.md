@@ -10,8 +10,9 @@ Invoke-WebRequest –URI "https://github.com/dafthack/DomainPasswordSpray/archiv
 ```
 
 ### Step 1 - DC First!
-Launch PowerShell in bypass signature validation mode.
 ![PowerShell Input][PowershellInput]
+#### Launch PowerShell in bypass signature validation mode.
+
 ```powershell
 powershell -ep bypass
 ```
@@ -24,7 +25,7 @@ set-executionpolicy bypass $confirm:false
 ### Step 2 - Download the DC-Configurator.ps1 file
 ![PowerShell Input][PowershellInput]
 ```powershell
-./DC-configurator.ps1
+./DC-Configurator.ps1
 ```
 
 The script downloads a number of archives, expands them and configures the entire Windows optics stack (minus the member server) as covered in the Applied Purple Teaming course material.
