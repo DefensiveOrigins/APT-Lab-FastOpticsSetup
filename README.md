@@ -2,16 +2,7 @@
 ![Defensive Origins](https://defensiveorigins.com/wp-content/uploads/2020/05/defensive-origins-header-6-1536x760.png)
 
 # Applied Purple Teaming Threat Optics Lab - Fast Optics Stack 
-Purple Teaming Attack &amp; Hunt Lab - Fast Optics with PowerShell
-
-
-![PowerShell Input][PowershellInput]
-```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-```
-
-#### Download using Invoke-WebRequest
-Use Invoke-WebRequest to download the necessary components.  Each of these commands will download the package from the URI specified and save it to the filename specified with the -OutFile flag.  
+## Purple Teaming Attack &amp; Hunt Lab - Fast Optics with PowerShell
 
 ![PowerShell Input][PowershellInput]
 ```powershell
