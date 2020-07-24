@@ -39,3 +39,6 @@ set-executionpolicy bypass $confirm:false
 The script downloads a number of archives, expands them and configures the entire Windows optics stack (minus the member server) as covered in the Applied Purple Teaming course material.
 
 ### Step 3 - The server will reboot at about the six minute mark!
+
+
+  [PowershellInput]:https://img.shields.io/badge/Powershell-Input-green.svg?style=flat-sware
