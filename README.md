@@ -48,4 +48,9 @@ powershell -ep bypass
 ./WS-Configurator.ps1
 ```
 
+
+### Step 6 - The server will reboot inside the one minute mark!
+
+### Step 7 - Check Kibana for logs.
+
   [PowershellInput]:https://img.shields.io/badge/Powershell-Input-green.svg?style=flat-sware
