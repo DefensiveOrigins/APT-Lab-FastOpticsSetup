@@ -31,8 +31,9 @@ The script downloads a number of archives, expands them and configures the entir
 
 ### Step 3 - The server will reboot at about the six minute mark!
 
+Access the member server (ws01.labs.local). 
 
-### Step 4 - Launch PowerShell in bypass mode
+### Step 4 - Launch PowerShell in bypass mode (member server)
 
 ![PowerShell Input][PowershellInput]
 #### Launch PowerShell in bypass signature validation mode.
