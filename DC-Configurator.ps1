@@ -1,9 +1,9 @@
 cd c:\labs
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -URI https://download.sysinternals.com/files/Sysmon.zip -OutFile “Sysmon.zip” 
-Invoke-WebRequest -URI https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.7.1-windows-x86_64.zip -OutFile “WinLogBeat.zip” 
-Invoke-WebRequest -URI https://github.com/olafhartong/sysmon-modular/archive/master.zip -OutFile “sysmon-modular.zip” 
-Invoke-WebRequest -URI https://github.com/palantir/windows-event-forwarding/archive/master.zip -OutFile “palantir.zip”
+Invoke-WebRequest -URI https://download.sysinternals.com/files/Sysmon.zip -OutFile "Sysmon.zip" 
+Invoke-WebRequest -URI https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.7.1-windows-x86_64.zip -OutFile "WinLogBeat.zip"
+Invoke-WebRequest -URI https://github.com/olafhartong/sysmon-modular/archive/master.zip -OutFile "sysmon-modular.zip" 
+Invoke-WebRequest -URI https://github.com/palantir/windows-event-forwarding/archive/master.zip -OutFile "palantir.zip"
 Invoke-WebRequest -URI https://github.com/DefensiveOrigins/LABPACK/archive/master.zip -OutFile LabPack.zip
 Expand-Archive .\Sysmon.zip 
 Expand-Archive .\sysmon-modular.zip 
