@@ -29,7 +29,7 @@ New-GPLink -Name "Enable-WinRM-and-RDP" -Target "dc=labs,dc=local" -LinkEnabled 
 Get-GPOReport -Name "Enable-WinRM-and-RDP" -ReportType HTML -Path "c:\Labs\GPOReport-Enable-WinRM-and-RDP.html"
 Get-GPOReport -Name "WS-Enhanced-Auditing" -ReportType HTML -Path "c:\Labs\GPOReport-WS-Enhanced-Auditing.html" 
 Get-GPOReport -Name "DC-Enhanced-Auditing" -ReportType HTML -Path "c:\Labs\GPOReport-DC-Enhanced-Auditing.html"
-Import-GPO -Path "\\dc01\LABS\LabPack\LABPACK-master\Lab-GPOs\Windows Event Forwarding" -BackupGpoName "Windows Event Forwarding” -CreateIfNeeded -TargetName "Windows Event Forwarding" -Server DC01
+Import-GPO -Path "\\dc01\LABS\LabPack\LABPACK-master\Lab-GPOs\Windows Event Forwarding" -BackupGpoName "Windows Event Forwarding" -CreateIfNeeded -TargetName "Windows Event Forwarding" -Server DC01
 Get-GPRegistryValue -Name "Windows Event Forwarding" -Key HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager
 Set-GPRegistryValue -Name "Windows Event Forwarding" -Key HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager -ValueName "1" -Type String -Value "Server=http://dc01.labs.local:5985/wsman/SubscriptionManager/WEC,Refresh=60"
 Get-GPRegistryValue -Name "Windows Event Forwarding" -Key HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager
