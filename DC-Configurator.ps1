@@ -22,7 +22,7 @@ cd \\dc01\labs\sysmon\
 Get-WinEvent -LogName Microsoft-Windows-Sysmon/Operational
 Import-GPO -Path "\\dc01\LABS\LabPack\LABPACK-master\Lab-GPOs\Enhanced-WS-Auditing\" -BackupGpoName "Enhanced WS Auditing" -CreateIfNeeded -TargetName "WS-Enhanced-Auditing" -Server DC01
 Import-GPO -Path "\\dc01\LABS\LabPack\LABPACK-master\Lab-GPOs\Enhanced-DC-Auditing\" -BackupGpoName "Enhanced DC Auditing" -CreateIfNeeded -TargetName "DC-Enhanced-Auditing" -Server DC01
-Import-GPO -Path "\\dc01\LABS\LabPack\LABPACK-master\Lab-GPOs\Enable-WinRM-and-RDP\" -BackupGpoName "Enable WinRM and RDP" -CreateIfNeeded -TargetName "Enable-WinRM-and-RDP" -Server DC01
+Import-GPO -Path "\\dc01\LABS\LabPack\LABPACK-master\Lab-GPOs\Enable-WinRM-and-RDP\" -BackupGpoName "Enable-WinRM-and-RDP" -CreateIfNeeded -TargetName "Enable-WinRM-and-RDP" -Server DC01
 New-GPLink -Name "WS-Enhanced-Auditing" -Target "dc=labs,dc=local" -LinkEnabled Yes
 New-GPLink -Name "DC-Enhanced-Auditing" -Target "ou=Domain Controllers,dc=labs,dc=local" -LinkEnabled Yes
 New-GPLink -Name "Enable-WinRM-and-RDP" -Target "dc=labs,dc=local" -LinkEnabled Yes
